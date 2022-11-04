@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "jsx": "react-native",
+        "lib": ["es2020"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "noEmit": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "esnext",
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true,
+        "paths": {
+            "*.html": ["./config/typescript/imports.d.ts"],
+            "*.png": ["./config/typescript/imports.d.ts"],
+            "@which/seatbelt": ["./src/types/seatbelt/index.d.ts"],
+            "@skele/components": ["./src/types/skele-components/index.d.ts"],
+            "@app/assets/*": ["./src/assets/*"],
+            "@app/atoms/*": ["./src/components/atoms/*"],
+            "@app/molecules/*": ["./src/components/molecules/*"],
+            "@app/organisms/*": ["./src/components/organisms/*"],
+            "@app/screens/*": ["./src/screens/*"],
+            "@app/utils/*": ["./src/utils/*"],
+            "@app/types/*": ["./src/types/*"],
+            "@app/fixtures/*": ["./src/fixtures/*"]
+        }
+    },
+    "exclude": ["node_modules", "detox.config.js", "babel.config.js", "metro.config.js", "jest.config.js"]
+}
